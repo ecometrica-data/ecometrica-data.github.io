@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cauce · Datos, estrategia y política pública</title>
+<meta name="description" content="Cauce es una firma de consultoría en analítica avanzada, inteligencia de negocios, política pública y transformación digital para organizaciones públicas y privadas en Colombia.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cauce · Datos, estrategia y política pública">
+<meta property="og:description" content="Cauce es una firma de consultoría en analítica avanzada, inteligencia de negocios, política pública y transformación digital para organizaciones públicas y privadas en Colombia.">
+<meta property="og:image" content="og-cauce.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2A1B4D">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="nav" aria-label="Principal">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg width="42" height="42" viewBox="0 0 120 120" aria-hidden="true"><mask id="lg-nav"><rect x="-40" y="-40" width="200" height="200" fill="white"/><g fill="black"><rect x="49.2" y="48.5" width="4.4" height="6" rx="0.6"/><rect x="54.8" y="44.5" width="4.4" height="10" rx="0.6"/><rect x="60.4" y="40.5" width="4.4" height="14" rx="0.6"/><rect x="66" y="36.0" width="4.4" height="18.5" rx="0.6"/></g></mask><g transform="translate(0 6) rotate(28 60 62) translate(12 12) scale(0.8)"><path d="M50 83 C50 72 29 65 29 44 A31 31 0 1 1 91 44 C91 65 70 72 70 83 Z" fill="none" stroke="#B8A4FF" stroke-width="6.6" stroke-linejoin="round"/><path d="M49 91 H71 M50.5 99 H69.5" fill="none" stroke="#B8A4FF" stroke-width="6" stroke-linecap="round"/><path d="M53 104.5 H67 Q64 111 60 111 Q56 111 53 104.5 Z" fill="#B8A4FF"/><path d="M60 26.4 L61.8 22.1 L67.5 23.3 L67.4 28 L71.3 30.5 L75.5 28.4 L79.1 33 L75.9 36.5 L77.3 40.9 L81.9 42 L81.7 47.8 L77 48.5 L75.2 52.8 L78.1 56.6 L74.1 60.9 L70.1 58.4 L66 60.5 L65.8 65.2 L60 66 L58.5 61.5 L54 60.5 L50.8 64 L45.9 60.9 L47.6 56.5 L44.8 52.8 L40.1 53.4 L38.3 47.8 L42.5 45.6 L42.7 40.9 L38.7 38.4 L40.9 33 L45.5 34 L48.7 30.5 L47.3 26 L52.5 23.3 L55.4 27 Z" fill="#7CF0C5" mask="url(#lg-nav)"/><path d="M93 -6.5 L95.1 1.9 L103.5 4 L95.1 6.1 L93 14.5 L90.9 6.1 L82.5 4 L90.9 1.9 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/><path d="M105 15.8 L106 20 L110.2 21 L106 22 L105 26.2 L104 22 L99.8 21 L104 20 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/></g></svg>
+      Cauce <small>Datos · Estrategia · Política pública</small>
+    </a>
+    <ul>
+      <li><a href="#practicas">Prácticas</a></li>
+      <li><a href="#casos">Experiencia</a></li>
+      <li><a href="#metodo">Metodología</a></li>
+      <li><a href="#equipo">Equipo</a></li>
+      <li><a class="cta-sm" href="#contacto">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <canvas id="contours" aria-hidden="true"></canvas>
+  <div class="hero-mark" aria-hidden="true"><svg width="440" height="440" viewBox="0 0 120 120" aria-hidden="true"><mask id="lg-hero"><rect x="-40" y="-40" width="200" height="200" fill="white"/><g fill="black"><rect x="49.2" y="48.5" width="4.4" height="6" rx="0.6"/><rect x="54.8" y="44.5" width="4.4" height="10" rx="0.6"/><rect x="60.4" y="40.5" width="4.4" height="14" rx="0.6"/><rect x="66" y="36.0" width="4.4" height="18.5" rx="0.6"/></g></mask><g transform="translate(0 6) rotate(28 60 62) translate(12 12) scale(0.8)"><path d="M50 83 C50 72 29 65 29 44 A31 31 0 1 1 91 44 C91 65 70 72 70 83 Z" fill="none" stroke="#B8A4FF" stroke-width="6.6" stroke-linejoin="round"/><path d="M49 91 H71 M50.5 99 H69.5" fill="none" stroke="#B8A4FF" stroke-width="6" stroke-linecap="round"/><path d="M53 104.5 H67 Q64 111 60 111 Q56 111 53 104.5 Z" fill="#B8A4FF"/><path d="M60 26.4 L61.8 22.1 L67.5 23.3 L67.4 28 L71.3 30.5 L75.5 28.4 L79.1 33 L75.9 36.5 L77.3 40.9 L81.9 42 L81.7 47.8 L77 48.5 L75.2 52.8 L78.1 56.6 L74.1 60.9 L70.1 58.4 L66 60.5 L65.8 65.2 L60 66 L58.5 61.5 L54 60.5 L50.8 64 L45.9 60.9 L47.6 56.5 L44.8 52.8 L40.1 53.4 L38.3 47.8 L42.5 45.6 L42.7 40.9 L38.7 38.4 L40.9 33 L45.5 34 L48.7 30.5 L47.3 26 L52.5 23.3 L55.4 27 Z" fill="#B8A4FF" mask="url(#lg-hero)"/><path d="M93 -6.5 L95.1 1.9 L103.5 4 L95.1 6.1 L93 14.5 L90.9 6.1 L82.5 4 L90.9 1.9 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/><path d="M105 15.8 L106 20 L110.2 21 L106 22 L105 26.2 L104 22 L99.8 21 L104 20 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/></g></svg></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Consultoría en analítica, inteligencia de negocios y política pública</span>
+      <h1>Encauzamos los datos hacia <em>mejores decisiones.</em></h1>
+      <p class="lede">Diseñamos, construimos e implementamos soluciones de analítica avanzada, inteligencia de negocios y transformación digital para organizaciones públicas y privadas. Economía, estadística, ingeniería de datos, derecho y gerencia, integrados en un solo equipo.</p>
+      <div class="actions">
+        <a class="btn primary" href="#contacto">Agendar una conversación</a>
+        <a class="btn ghost" href="#casos">Conocer nuestra experiencia</a>
+      </div>
+    </div>
+    <div class="ledger" aria-label="Cauce en cifras">
+      <div><b>66+</b><span>años de experiencia combinada</span></div>
+      <div><b>6</b><span>prácticas especializadas</span></div>
+      <div><b>7</b><span>soluciones implementadas en tres sectores</span></div>
+      <div><b>&lt; 8</b><span>meses del diagnóstico a la operación</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="sectors" aria-label="Experiencia sectorial">
+  <div class="wrap">
+    <b>Sectores</b>
+    <span>Gobierno nacional y territorial</span>
+    <span>Agua y servicios públicos</span>
+    <span>Banca y servicios financieros</span>
+    <span>Regulación</span>
+    <span>Comercio exterior</span>
+    <span>Educación</span>
+  </div>
+</div>
+
+<main>
+<section id="practicas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Prácticas</span>
+      <h2>Capacidades integradas para cada etapa de la decisión</h2>
+      <p class="lede">Combinamos las prácticas que cada desafío exige, con el mismo rigor metodológico para una junta directiva que para un despacho de gobierno.</p>
+    </div>
+    <div class="practices">
+      <div class="prac">
+        <span class="tag">Ciencia de datos <i>Público · Privado</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg></span><h3>Analítica avanzada</h3>
+        <p>Modelos que anticipan, explican y priorizan.</p>
+        <ul>
+          <li>Pronóstico y series de tiempo</li>
+          <li>Aprendizaje automático explicable e inferencia causal</li>
+          <li>Procesamiento de lenguaje natural y visión por computador</li>
+        </ul>
+      </div>
+      <div class="prac">
+        <span class="tag">BI <i>Público · Privado</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 17v-4M12 17v-6M16 17v-3"/></svg></span><h3>Inteligencia de negocios</h3>
+        <p>Una sola versión de la verdad para la alta dirección.</p>
+        <ul>
+          <li>Modelos semánticos y tableros ejecutivos</li>
+          <li>Aplicaciones analíticas a la medida</li>
+          <li>Georreferenciación y control de gestión</li>
+        </ul>
+      </div>
+      <div class="prac">
+        <span class="tag">Mercados <i>Privado · Público</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span><h3>Investigación de mercados</h3>
+        <p>Evidencia sobre clientes, demanda y competencia.</p>
+        <ul>
+          <li>Diseño muestral, encuestas y análisis estadístico</li>
+          <li>Segmentación de clientes y estimación de demanda</li>
+          <li>Analítica de la voz del cliente</li>
+        </ul>
+      </div>
+      <div class="prac">
+        <span class="tag">Política pública <i>Público · Cooperación</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6"/><path d="M5.5 10v8M10 10v8M14 10v8M18.5 10v8"/><path d="M3 20.5h18"/></svg></span><h3>Política pública y regulación</h3>
+        <p>Del diagnóstico a la norma, y de la norma al indicador.</p>
+        <ul>
+          <li>Diagnósticos, líneas base e indicadores</li>
+          <li>Documentos técnicos de soporte y proyectos normativos</li>
+          <li>Consultas públicas y seguimiento a compromisos</li>
+        </ul>
+      </div>
+      <div class="prac">
+        <span class="tag">Transformación digital <i>Público · Privado</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg></span><h3>Automatización de procesos</h3>
+        <p>Procesos que se ejecutan solos y dejan trazabilidad.</p>
+        <ul>
+          <li>Extracción inteligente de documentos</li>
+          <li>Power Platform, Python y R</li>
+          <li>Integración y conciliación de fuentes</li>
+        </ul>
+      </div>
+      <div class="prac">
+        <span class="tag">Gobierno del dato <i>Público · Privado</i></span>
+        <span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v6c0 4.6-3.2 7.7-7.5 9-4.3-1.3-7.5-4.4-7.5-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Gobierno del dato y cumplimiento</h3>
+        <p>Datos confiables, documentados y dentro del marco legal.</p>
+        <ul>
+          <li>Calidad, linaje y estandarización</li>
+          <li>Protección de datos personales y ética</li>
+          <li>Oficina de proyectos y control de gestión</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modalidades" class="engage-bg">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Modalidades de servicio</span>
+      <h2>Lideramos el proyecto o fortalecemos a su equipo</h2>
+    </div>
+    <div class="engage">
+      <div class="eng"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16.5 6.5l3 3M14 9l2 2"/></svg></span><span class="for">Llave en mano</span><h3>Dirección de proyectos</h3><p>Asumimos el ciclo completo: diagnóstico, diseño, construcción, puesta en producción y entrega.</p></div>
+      <div class="eng"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><span class="for">Asesoría experta</span><h3>Acompañamiento técnico</h3><p>Orientamos a su equipo en metodología, arquitectura de datos, modelos y buenas prácticas.</p></div>
+      <div class="eng"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.8-4.8"/><path d="M8 10.5l1.8 1.8 3-3"/></svg></span><span class="for">Segunda opinión</span><h3>Revisión analítica</h3><p>Validamos modelos, indicadores, tableros y documentos técnicos antes de que lleguen a la dirección.</p></div>
+      <div class="eng"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span><span class="for">Capacidad instalada</span><h3>Formación y transferencia</h3><p>Documentamos y capacitamos para que su organización opere las soluciones con autonomía.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="casos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Experiencia</span>
+      <h2>Soluciones en operación</h2>
+      <p class="lede">Una muestra de proyectos recientes en los sectores público, financiero y educativo. Por confidencialidad, presentamos el desafío, la solución y el impacto, sin información del cliente.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar por práctica">
+      <button type="button" aria-pressed="true" data-f="todos">Todas <span class="cnt" data-c="todos"></span></button>
+      <button type="button" aria-pressed="false" data-f="ds">Analítica avanzada <span class="cnt" data-c="ds"></span></button>
+      <button type="button" aria-pressed="false" data-f="bi">Inteligencia de negocios <span class="cnt" data-c="bi"></span></button>
+      <button type="button" aria-pressed="false" data-f="td">Transformación digital <span class="cnt" data-c="td"></span></button>
+      <button type="button" aria-pressed="false" data-f="pp">Política pública <span class="cnt" data-c="pp"></span></button>
+    </div>
+
+    <article class="case" data-cat="ds">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">01</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 3-7 6-11z"/></svg></span></div>
+        <span class="eyebrow">Sector público</span>
+        <span class="client">Entidad del orden nacional · Agua y saneamiento</span>
+        <div class="stack"><span class="chip">Series de tiempo</span><span class="chip">R Shiny</span><span class="chip">Georreferenciación</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Riesgo climático convertido en criterio de inversión</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>Priorizar la intervención territorial ante un evento climático extremo, con información climática y de proyectos dispersa en fuentes distintas.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Observatorio analítico que integra el índice climático oficial, el portafolio de proyectos y una escala de riesgo municipal, con pronóstico estadístico validado y lectura territorial en mapa.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Priorización de proyectos basada en evidencia para cientos de municipios, con actualización continua.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Aseguradoras, agroindustria, energía y cadenas de suministro expuestas al clima.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="bi">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">02</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V7l7-4v18M11 21V9l9 3v9M2.5 21h19"/><path d="M7 9v.01M7 13v.01M7 17v.01M15 15v.01M15 18v.01"/></svg></span></div>
+        <span class="eyebrow">Sector público</span>
+        <span class="client">Entidad del orden nacional · Portafolio de infraestructura</span>
+        <div class="stack"><span class="chip">Power BI</span><span class="chip">Modelado de datos</span><span class="chip">Datos abiertos</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Una sola versión de la verdad para el portafolio de inversión</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>La evaluación, la ejecución y el seguimiento de los proyectos se reportaban en archivos independientes, sin un dato único para la dirección ni para la ciudadanía.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Modelo semántico que integra evaluación, avance físico y financiero, cofinanciación, población beneficiada, empleo y georreferenciación, con tableros internos y una versión pública de consulta.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Primer tablero público de la dependencia sobre proyectos en evaluación, al servicio de gobiernos territoriales, operadores y ciudadanía.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Oficinas de proyectos, constructoras, fondos de inversión y banca de desarrollo.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="pp">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">03</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M6 20h12M4 8h16"/><path d="M7 8l-3 6c0 1.5 1.3 2.5 3 2.5s3-1 3-2.5z"/><path d="M17 8l-3 6c0 1.5 1.3 2.5 3 2.5s3-1 3-2.5z"/></svg></span></div>
+        <span class="eyebrow">Sector público</span>
+        <span class="client">Entidad del orden nacional · Regulación y participación</span>
+        <div class="stack"><span class="chip">Modelos de lenguaje</span><span class="chip">Python</span><span class="chip">Automatización</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Consultas públicas normativas procesadas con inteligencia artificial</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>Cada proyecto normativo en consulta recibe un alto volumen de comentarios y anexos dispersos, que deben responderse de forma oportuna, consistente y trazable.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Flujo que recopila automáticamente comentarios y anexos, los consolida en una matriz única y agrupa las observaciones por significado con modelos de lenguaje multilingües, identificando los temas clave de cada grupo.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Matrices de respuesta estructuradas, con temas priorizados y cada observación trazable hasta su fuente.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Gremios, reguladores, gestión de PQRS, voz del cliente y estudios cualitativos.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="td">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">04</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg></span></div>
+        <span class="eyebrow">Sector público</span>
+        <span class="client">Entidad del orden nacional · Gestión contractual</span>
+        <div class="stack"><span class="chip">Inteligencia documental</span><span class="chip">Python</span><span class="chip">Aprendizaje no supervisado</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Inteligencia documental para la supervisión de contratos</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>Verificar el cumplimiento de un equipo numeroso de contratistas exigía revisar manualmente expedientes en PDF con formatos heterogéneos.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Motor de extracción que reconoce múltiples plantillas, estructura cada obligación contractual, la concilia con la base de contratos y clasifica las actividades, con histórico mensual.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Revisión manual reemplazada por un proceso trazable, con cobertura total del equipo y alertas sobre documentos incompletos.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Cuentas por pagar, gestión de contratos, auditoría y cumplimiento.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="bi">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">05</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span></div>
+        <span class="eyebrow">Sector público</span>
+        <span class="client">Entidad del orden nacional · Gestión territorial</span>
+        <div class="stack"><span class="chip">R Shiny</span><span class="chip">Base de datos en la nube</span><span class="chip">Multiusuario</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Plataforma colaborativa de seguimiento a compromisos</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>Los compromisos adquiridos con las regiones se seguían con consolidados manuales que circulaban entre áreas, sin responsables ni fechas explícitas.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Aplicación web multiusuario con registro y edición por responsable, etapas de gestión con fechas de seguimiento, alertas de vencimiento, mapas y una vista ejecutiva para la alta dirección.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Seguimiento en tiempo real, con responsables identificados y alertas tempranas para la toma de decisiones.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Seguimiento de OKR, planes comerciales, compromisos de junta directiva y redes de sucursales.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="td">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">06</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg></span></div>
+        <span class="eyebrow">Sector financiero</span>
+        <span class="client">Entidad bancaria · Operaciones y corresponsalía</span>
+        <div class="stack"><span class="chip">R</span><span class="chip">Conciliación</span><span class="chip">Reporte regulatorio</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Conciliación automatizada con aliados comerciales</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>El cuadre periódico entre las transacciones del banco y las reportadas por su aliado de corresponsalía se construía manualmente, con impacto en comisiones y reportes regulatorios.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Flujo automatizado que consolida los registros de ambas partes, estandariza las operaciones, determina la base de comisiones, georreferencia cada punto de servicio y genera el reporte regulatorio con un solo clic.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Un proceso manual recurrente convertido en una ejecución controlada, con trazabilidad por terminal y municipio.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Fintech, pasarelas de pago, recaudo, comercio con aliados y aseguradoras.</p>
+      </div>
+    </article>
+
+    <article class="case" data-cat="ds pp">
+      <div class="case-meta">
+        <div class="case-top"><span class="case-num">07</span><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span></div>
+        <span class="eyebrow">Investigación aplicada</span>
+        <span class="client">Sector educativo · Datos abiertos</span>
+        <div class="stack"><span class="chip">XGBoost · SHAP</span><span class="chip">Inferencia causal</span><span class="chip">Equidad algorítmica</span></div>
+      </div>
+      <div class="case-body">
+        <h3>Aprendizaje automático explicable para política educativa</h3>
+        <dl class="dsi">
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>Desafío</dt><dd>Establecer cuánto del desempeño en una evaluación nacional se explica por condiciones socioeconómicas, con un modelo que además de predecir pudiera explicarse.</dd></div>
+          <div><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg>Solución</dt><dd>Medición de desigualdad, pruebas con tamaños de efecto, inferencia causal por emparejamiento y modelos de gradient boosting interpretados con SHAP, con auditoría de sesgo por grupo poblacional.</dd></div>
+          <div class="imp"><dt><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg>Impacto</dt><dd>Un marco replicable que integra explicación, causalidad y predicción, con verificación de equidad antes de su uso.</dd></div>
+        </dl>
+        <p class="transfer"><b>También aplicable en</b>Evaluación de programas, riesgo crediticio explicable, retención de clientes y focalización de subsidios.</p>
+      </div>
+    </article>
+
+    <p class="empty-note" id="casos-status" aria-live="polite"></p>
+    <p class="credit">Demostraciones disponibles en reunión, bajo acuerdo de confidencialidad.</p>
+  </div>
+</section>
+
+<section id="metodo" class="method-bg">
+  <div class="wrap method">
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Metodología</span>
+        <h2>De la pregunta de negocio al resultado en operación</h2>
+      </div>
+      <div class="principles">
+        <div class="pr"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg></span><div><h3>Empezamos por la decisión</h3><p>Definimos qué debe decidirse y con qué evidencia, antes de elegir la técnica o la herramienta.</p></div></div>
+        <div class="pr"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><div><h3>Construimos sobre su infraestructura</h3><p>Aprovechamos sus licencias, sus datos y el software libre. Sin inversiones adicionales en plataformas ni dependencia de proveedores.</p></div></div>
+        <div class="pr"><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span><div><h3>Transferimos capacidad</h3><p>Cada solución se entrega documentada y con su equipo capacitado para operarla.</p></div></div>
+      </div>
+    </div>
+    <div>
+      <span class="steps-label">Ciclo de un proyecto</span>
+      <ol class="steps">
+        <li><div><h3>Diagnóstico</h3><p>Necesidades, fuentes de información y pregunta de negocio o de política.</p></div></li>
+        <li><div><h3>Diseño</h3><p>Arquitectura de datos, indicadores con ficha técnica, modelo analítico y plan de entregables.</p></div></li>
+        <li><div><h3>Construcción iterativa</h3><p>Prototipos funcionales en semanas, validados con los usuarios finales.</p></div></li>
+        <li><div><h3>Puesta en producción</h3><p>Publicación, pruebas, alertas y protocolos de actualización.</p></div></li>
+        <li><div><h3>Transferencia</h3><p>Manuales, capacitación y acompañamiento durante la adopción.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="equipo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Equipo</span>
+      <h2>Un equipo interdisciplinario</h2>
+      <p class="lede">Trayectorias en el sector público, la banca y la academia, reunidas para abordar cada desafío en sus dimensiones estratégica, analítica, tecnológica y jurídica.</p>
+    </div>
+    <div class="team">
+      <article class="person">
+        <img src="celia.jpg" alt="Celia Inés Buitrago Vásquez" loading="lazy" width="360" height="360">
+        <div class="info">
+          <span class="role">Dirección estratégica</span>
+          <h3>Celia Inés Buitrago Vásquez</h3>
+          <span class="yrs">25+ años de experiencia</span>
+          <p class="cred">Economista, con énfasis en Comercio Exterior. Cancillería, DAPRE, CRA, Concejo de Bogotá y banca.</p>
+          <ul>
+            <li>Sector público, servicio exterior, regulación y banca</li>
+            <li>Liderazgo gerencial y articulación institucional</li>
+            <li>Planeación estratégica, presupuesto e indicadores de gestión</li>
+          </ul>
+        </div>
+      </article>
+      <article class="person">
+        <img src="diego.jpg" alt="Diego Flórez Castillo" loading="lazy" width="360" height="360">
+        <div class="info">
+          <span class="role">Analítica y ciencia de datos</span>
+          <h3>Diego Flórez Castillo</h3>
+          <span class="yrs">12+ años de experiencia</span>
+          <p class="cred">Economista, especialista en Estadística Aplicada, magíster (c) en Ciencia de Datos. Banca, academia y sector público.</p>
+          <ul>
+            <li>Analítica predictiva, econometría y aprendizaje automático</li>
+            <li>R, Shiny, Python y Power BI</li>
+            <li>Indicadores, tableros y automatización de reportería</li>
+          </ul>
+        </div>
+      </article>
+      <article class="person">
+        <img src="elthon.jpg" alt="Elthon Brayan Márquez Bautista" loading="lazy" width="360" height="360">
+        <div class="info">
+          <span class="role">Automatización e inteligencia de negocios</span>
+          <h3>Elthon Brayan Márquez Bautista</h3>
+          <span class="yrs">15+ años de experiencia</span>
+          <p class="cred">Administrador de Empresas, magíster en Analítica de Datos. Sector público, banca y automatización.</p>
+          <ul>
+            <li>Power Automate, Forms y Microsoft Graph</li>
+            <li>Power BI, SQL Server, MySQL, Teradata y SAS</li>
+            <li>Python, R y VBA para procesamiento de datos</li>
+          </ul>
+        </div>
+      </article>
+      <article class="person">
+        <img src="heinz.jpg" alt="Heinz Gamba Vargas" loading="lazy" width="360" height="360">
+        <div class="info">
+          <span class="role">Asesoría jurídica y regulatoria</span>
+          <h3>Heinz Gamba Vargas</h3>
+          <span class="yrs">14+ años de experiencia</span>
+          <p class="cred">Abogada. Servicios públicos domiciliarios, planeación pública y gestión comunitaria del agua.</p>
+          <ul>
+            <li>Enfoque jurídico, ambiental, social y regulatorio</li>
+            <li>Proyectos normativos y documentos técnicos de soporte</li>
+            <li>Gobierno del dato, ética y cumplimiento legal</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="stack-bg" id="tecnologia">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Tecnología</span>
+      <h2>Stack tecnológico</h2>
+      <p class="lede">Trabajamos sobre los ecosistemas que su organización ya utiliza.</p>
+    </div>
+    <div class="tech">
+      <div><svg class="ico tech-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16"/><path d="M8 15l3.5-4 3 2.5L20 7"/><path d="M16 7h4v4"/></svg><h3>Analítica y modelación</h3><p>R · tidyverse · forecast<br>Python · pandas · scikit-learn<br>XGBoost · TensorFlow · SAS</p></div>
+      <div><svg class="ico tech-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12.5h5"/></svg><h3>Lenguaje e IA</h3><p>Sentence Transformers<br>Embeddings multilingües<br>Clasificación y agrupamiento</p></div>
+      <div><svg class="ico tech-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 17v-4M12 17v-6M16 17v-3"/></svg><h3>Visualización y BI</h3><p>Power BI · DAX · Power Query<br>R Shiny · plotly · Leaflet<br>Azure Maps</p></div>
+      <div><svg class="ico tech-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></svg><h3>Datos y automatización</h3><p>SQL Server · MySQL · Teradata<br>Power Automate · Graph · VBA<br>Posit Connect · Google Cloud</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="valor">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Por qué Cauce</span>
+      <h2>Lo que nos diferencia</h2>
+    </div>
+    <div class="values">
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7v5M12 12l-5.5 5.5M12 12l5.5 5.5"/></svg></span><h3>Visión interdisciplinaria</h3><p>Economía, estadística, ingeniería de datos, derecho y gerencia en un mismo equipo.</p></div>
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><h3>Resultados en semanas</h3><p>Entregables funcionales desde las primeras etapas y mejora continua.</p></div>
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></span><h3>Eficiencia en costos</h3><p>Soluciones construidas sobre sus licencias y sobre software libre.</p></div>
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></span><h3>Rigor verificable</h3><p>Supuestos explícitos, validación estadística e indicadores con ficha técnica.</p></div>
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7.5 3v6c0 4.6-3.2 7.7-7.5 9-4.3-1.3-7.5-4.4-7.5-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Cumplimiento desde el diseño</h3><p>Protección de datos, ética y marco regulatorio incorporados desde el inicio.</p></div>
+      <div><span class="ibadge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 7.6-1.7"/></svg></span><h3>Autonomía del cliente</h3><p>Documentación y transferencia completas, sin dependencia de nuestro equipo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Contacto</span>
+        <h2>Conversemos sobre su próximo desafío</h2>
+        <p class="lede">Acompañamos a empresas, gremios, entidades públicas, gobiernos territoriales, prestadores de servicios y organismos de cooperación.</p>
+      </div>
+      <ul class="offer">
+        <li>Sesión de diagnóstico sin costo</li>
+        <li>Propuesta con alcance, entregables, cronograma e inversión</li>
+        <li>Primeros entregables funcionales en semanas</li>
+      </ul>
+    </div>
+    <div class="card-contact">
+      <div class="row">
+        <label><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>WhatsApp / teléfono</label>
+        <div class="val"><a id="phone" href="https://wa.me/573008586326" target="_blank" rel="noopener">+57 300 858 6326</a><button class="copy" type="button" data-copy="phone">Copiar</button></div>
+      </div>
+      <div class="row">
+        <label><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Cobertura</label>
+        <div class="val"><span>Bogotá, Colombia · Proyectos en todo el país, presenciales y remotos</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b class="foot-brand"><svg width="48" height="48" viewBox="0 0 120 120" aria-hidden="true"><mask id="lg-foot"><rect x="-40" y="-40" width="200" height="200" fill="white"/><g fill="black"><rect x="49.2" y="48.5" width="4.4" height="6" rx="0.6"/><rect x="54.8" y="44.5" width="4.4" height="10" rx="0.6"/><rect x="60.4" y="40.5" width="4.4" height="14" rx="0.6"/><rect x="66" y="36.0" width="4.4" height="18.5" rx="0.6"/></g></mask><g transform="translate(0 6) rotate(28 60 62) translate(12 12) scale(0.8)"><path d="M50 83 C50 72 29 65 29 44 A31 31 0 1 1 91 44 C91 65 70 72 70 83 Z" fill="none" stroke="#B8A4FF" stroke-width="6.6" stroke-linejoin="round"/><path d="M49 91 H71 M50.5 99 H69.5" fill="none" stroke="#B8A4FF" stroke-width="6" stroke-linecap="round"/><path d="M53 104.5 H67 Q64 111 60 111 Q56 111 53 104.5 Z" fill="#B8A4FF"/><path d="M60 26.4 L61.8 22.1 L67.5 23.3 L67.4 28 L71.3 30.5 L75.5 28.4 L79.1 33 L75.9 36.5 L77.3 40.9 L81.9 42 L81.7 47.8 L77 48.5 L75.2 52.8 L78.1 56.6 L74.1 60.9 L70.1 58.4 L66 60.5 L65.8 65.2 L60 66 L58.5 61.5 L54 60.5 L50.8 64 L45.9 60.9 L47.6 56.5 L44.8 52.8 L40.1 53.4 L38.3 47.8 L42.5 45.6 L42.7 40.9 L38.7 38.4 L40.9 33 L45.5 34 L48.7 30.5 L47.3 26 L52.5 23.3 L55.4 27 Z" fill="#7CF0C5" mask="url(#lg-foot)"/><path d="M93 -6.5 L95.1 1.9 L103.5 4 L95.1 6.1 L93 14.5 L90.9 6.1 L82.5 4 L90.9 1.9 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/><path d="M105 15.8 L106 20 L110.2 21 L106 22 L105 26.2 L104 22 L99.8 21 L104 20 Z" fill="#B8A4FF" stroke="#B8A4FF" stroke-width="1.2" stroke-linejoin="round"/></g></svg><span>Cauce · Datos, estrategia y política pública</span></b>
+    <span>© 2026 Cauce. Firma independiente de consultoría. Bogotá, Colombia.</span>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
