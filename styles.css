@@ -2,7 +2,7 @@
 body{margin:0}
 img{max-width:100%}
 [hidden]{display:none!important}
-/* Identidad Cauce: grafito · lavanda · menta */
+/* Identidad Ecométrica Data */
 :root{
   --ground:#F2F1F6;
   --surface:#FFFFFF;
@@ -246,6 +246,8 @@ section{padding-block:clamp(56px,8vw,104px)}
 
 .logo-tile{display:inline-grid;place-items:center;background:#FFFFFF;border-radius:10px;padding:3px;flex:none}
 .logo-tile.lg{border-radius:12px;padding:4px}
+.wm{font-family:var(--display);font-weight:800;letter-spacing:-.02em}
+.wm-a{color:var(--amber);font-weight:700}
 footer{background:var(--deep);color:var(--deep-muted);font-size:13.5px;padding-block:32px}
 footer .wrap{display:grid;gap:10px}
 footer b{color:var(--deep-ink);font-family:var(--display)}
