@@ -1,7 +1,7 @@
 # Ecométrica Data · sitio publicado
 
-Enlace público: https://dflorez09979.github.io/cauce-web/
-Repositorio: https://github.com/Dflorez09979/cauce-web
+Enlace público: https://ecometrica-data.github.io/
+Repositorio: https://github.com/ecometrica-data/ecometrica-data.github.io
 
 Esta carpeta es copia exacta de lo que está publicado. Todos los archivos van en la raíz, sin subcarpetas.
 
